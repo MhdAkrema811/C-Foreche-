@@ -105,5 +105,24 @@ namespace WindowsFormsApplication2
                 if (gun != null) listBox1.Items.Add(gun);
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string[] gunler = new string[7];
+            gunler[0] = "Pazartesi";
+            gunler[1] = "Salı";
+            gunler[2] = "Çarşamba";
+            gunler[3] = "Perşembe";
+            gunler[4] = "Cuma";
+            gunler[5] = "Cumartesi";
+            gunler[6] = "Pazar";
+            listBox1.Items.Clear();
+            Array.Copy(gunler,, 2);
+            foreach (string gun in gunler)
+            {
+                if (gun != null)
+                    listBox1.Items.Add(gun);
+            }
+        }
     }
 }
