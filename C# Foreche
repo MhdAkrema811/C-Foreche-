@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] dizi = { 3, 2, 6, 7 };
+            foreach (int eleman in dizi)
+            {
+                Console.WriteLine(eleman);
+
+            }
+            Console.WriteLine("-------------");
+            foreach (int eleman2 in dizi)
+            {
+                Console.WriteLine(eleman2 * 3);
+
+            }
+            Console.ReadLine();
+        }
+    }
+}
