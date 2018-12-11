@@ -66,25 +66,44 @@ namespace WindowsFormsApplication2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //string[] gunler = new string[7];
-            //gunler[0] = "Pazartesi";
-            //gunler[1] = "Salı";
-            //gunler[2] = "Çarşamba";
-            //gunler[3] = "Perşembe";
-            //gunler[4] = "Cuma";
-            //gunler[5] = "Cumartesi";
-            //gunler[6] = "Pazar";
-            //listBox1.Items.Clear();
-            //Array.Clear(gunler, 2, 2);
-            //foreach(string gun in gunler)
-            //{
-            //    if (gun != null)
-            //        listBox1.Items.Add(gun);
-            //}
-
+            string[] gunler = new string[7];
+            gunler[0] = "Pazartesi";
+            gunler[1] = "Salı";
+            gunler[2] = "Çarşamba";
+            gunler[3] = "Perşembe";
+            gunler[4] = "Cuma";
+            gunler[5] = "Cumartesi";
+            gunler[6] = "Pazar";
             listBox1.Items.Clear();
+            Array.Clear(gunler, 2, 2);
+            foreach (string gun in gunler)
+            {
+                if (gun != null)
+                    listBox1.Items.Add(gun);
+            }
+
+            //listBox1.Items.Clear();
             //To Delete All things
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string[] gunler = new string[7];
+            string[] yenigunler;
+            gunler[0] = "Pazartesi";
+            gunler[1] = "Salı";
+            gunler[2] = "Çarşamba";
+            gunler[3] = "Perşembe";
+            gunler[4] = "Cuma";
+            gunler[5] = "Cumartesi";
+            gunler[6] = "Pazar";
+            yenigunler = (string[])gunler.Clone();
+            listBox1.Items.Clear();
+            foreach(string gun in yenigunler)
+            {
+                if (gun != null) listBox1.Items.Add(gun);
+            }
         }
     }
 }
